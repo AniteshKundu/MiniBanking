@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'com.minibank'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.1'
+    implementation 'mysql:mysql-connector-java:8.0.26'
+}
+
+test {
+    useJUnitPlatform()
+}
